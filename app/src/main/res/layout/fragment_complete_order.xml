@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.darewro.Fragments.CompleteOrderFragment">
+
+    <LinearLayout
+        android:id="@+id/Progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/trending_gradient_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pbProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#ffffff"></ProgressBar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Order Detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ImageView
+                        android:id="@+id/editImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_edit_28dp"
+                        android:tint="@color/colorAccent"
+                        tools:layout_editor_absoluteX="11dp"
+                        tools:layout_editor_absoluteY="225dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvOrderType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Type"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <RadioButton
+                            android:id="@+id/rbBD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Drop Items"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </LinearLayout>
+                    <!--<LinearLayout-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:weightSum="2"-->
+                    <!--android:padding="4dp">-->
+
+                    <!--<RadioButton-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Normal"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                    <!--android:id="@+id/rbDT"-->
+                    <!--android:checked="true"/>-->
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                    <!--android:text="2 to 6 working hours with expected charges 150 to 250 "-->
+                    <!--android:id="@+id/tvDeliveryTypeDetail" />-->
+
+                    <!--</LinearLayout>-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ScrollView
+                            android:id="@+id/scrollView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/btnOrder"
+                            android:layout_alignParentTop="true"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Item Detail"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/etOrderDet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:hint="Order Detail"
+                                    android:maxLength="140"
+                                    android:padding="2dp"
+                                    android:text="Documents"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="Your Detail"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/etPName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Name"
+                                    android:maxLength="70"
+                                    android:padding="2dp"
+                                    android:text="Muhammad Tahir"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                                <TextView
+                                    android:id="@+id/etPNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Contact Number"
+                                    android:maxLength="15"
+                                    android:padding="2dp"
+                                    android:text="0333-1234567"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                                <TextView
+                                    android:id="@+id/etPAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:hint="Address"
+                                    android:maxLength="140"
+                                    android:padding="2dp"
+                                    android:text="Hayatabad Phase 4, Sector N-2, Street 5, House# 13"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textStyle="italic" />
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="Drop Location"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/etDName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Name"
+                                    android:maxLength="70"
+                                    android:padding="2dp"
+                                    android:text="Jaffar Hussain"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                                <TextView
+                                    android:id="@+id/etDNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Contact Number"
+                                    android:maxLength="15"
+                                    android:padding="2dp"
+                                    android:text="091-1234567"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                                <TextView
+                                    android:id="@+id/etDAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:hint="Address"
+                                    android:maxLength="140"
+                                    android:padding="2dp"
+                                    android:text="House# 8-B, Defence Officer Colony, Khyber Road, Peshawar"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <Button
+                            android:id="@+id/btnOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/default_btn_pressed"
+                            android:text="Proceed Order"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:background="@color/snackBarColor"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLength="50"
+            android:padding="6dp"
+            android:text="@string/no_connection"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>

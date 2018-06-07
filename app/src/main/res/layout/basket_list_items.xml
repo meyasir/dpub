@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="2dp"
+    android:clickable="false">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zinger Combo"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/ShipGray"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/removeImageView"/>
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_toLeftOf="@+id/removeImageView"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/name" />
+
+        <TextView
+            android:id="@+id/pricetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PKR "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/ShipGray"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/weight"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/ShipGray"
+            android:layout_toRightOf="@+id/pricetitle"
+            android:layout_below="@+id/weight"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/decBtn"
+            />
+        <TextView
+            android:id="@+id/resName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chief"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pricetitle"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/removeImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_highlight_remove_24dp"
+            android:tint="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_remove_circle_32dp"
+            android:id="@+id/decBtn"
+            android:tint="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/weight"
+            android:layout_toLeftOf="@+id/quantity"/>
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16dp"
+            android:textColor="@color/ShipGray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/weight"
+            android:layout_toLeftOf="@+id/incBtn"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_add_circle_32dp"
+            android:id="@+id/incBtn"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/weight"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

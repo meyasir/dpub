@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#00ffffff">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary"
+        android:elevation="10dp"
+        app:title="Edit Order Detail"
+        app:titleTextColor="@android:color/background_dark">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_above="@id/linearLayout2"
+        android:padding="8dp"
+        android:layout_below="@+id/toolbar">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="#00ffffff"
+        android:clipToPadding="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#767676"
+            android:textSize="20dp"
+            android:text="Item Details"
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:background="#00ffffff"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etItemDetails"
+                android:inputType="textPersonName"
+                android:hint="Enter Item details"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLength="70"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#767676"
+            android:textSize="20dp"
+            android:text="Your Detail"
+            android:id="@+id/textView1"
+            android:layout_gravity="center"
+            android:background="#00ffffff"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etName"
+                android:inputType="textPersonName"
+                android:hint="Your Name"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLength="70"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNumber"
+                android:inputType="phone"
+                android:hint="Your Contact Number"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/etAddress"
+                android:inputType="textPostalAddress"
+                android:hint="Your Address"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLength="140"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#767676"
+            android:textSize="20dp"
+            android:text="Title"
+            android:id="@+id/textView3"
+            android:layout_gravity="center"
+            android:background="#00ffffff"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPName"
+                android:inputType="textPersonName"
+                android:hint="Person Name"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLength="70"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPNumber"
+                android:inputType="phone"
+                android:hint="Person Contact Number"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/etPAddress"
+                android:inputType="textPostalAddress"
+                android:hint="Person Address"
+                android:padding="10dp"
+                android:layout_margin="2dp"
+                android:maxLength="140"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="#00ffffff"
+        android:clipToPadding="false"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:minWidth="88dp"
+            android:text="Save"
+            android:id="@+id/btnSave"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/default_btn_pressed"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="18dp"
+            android:padding="8dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

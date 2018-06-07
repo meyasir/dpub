@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "380294036629",
+    "firebase_url": "https://darewro-3c85e.firebaseio.com",
+    "project_id": "darewro-3c85e",
+    "storage_bucket": "darewro-3c85e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380294036629:android:1eacc6d9848c6a49",
+        "android_client_info": {
+          "package_name": "com.darewro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380294036629-7h7kislvigkmc25vk0gopjc5cbpmf9cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZJA1xd9cE_LhWq5CoqFHbhPz2mgGMTSk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Darewro</string>
+    <string name="help">Bring Items: Bringing any items from any other place, like bringing clothes from your tailor, bringing job application/admission forms or buying a specific item from a specific shop.\n\nSend Items: Sending anything from your place to other place. Submitting your Application from. Sending gifts to someone. Sending clothes to tailor etc etc. </string>
+    <string name="url">"http://darewro.com/mobile/mobile_services/"</string>
+    <string name="image_url">"http://www.darewro.com/assets/uploads/"</string>
+    <string name="no_connection">"No internet connection. Reconnect and try again"</string>
+    <string name="item_detail_alert">"Items detail is mandatory"</string>
+    <string name="name_alert">"Name is mandatory"</string>
+    <string name="email_alert">"Email is mandatory"</string>
+    <string name="contact_number_alert">"Contact number is mandatory"</string>
+    <string name="address_alert">"Address is mandatory"</string>
+    <string name="number_alert">"Not Valid Number"</string>
+    <string name="not_valid_emal">"Not Valid Email"</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="pin_content_desc">PIN input field</string>
+</resources>

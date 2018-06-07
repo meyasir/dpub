@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    android:background="#f7f7f7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/priceLayout"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/item"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zinger Combo"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/ShipGray"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Per Kg"
+        android:visibility="gone"
+        android:layout_below="@+id/item"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/ShipGray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delicious pieces of juicy chicken thigh with KFC’s Spicy Zinger Recipe, cheese, fresh lettuce in a fresh round bun. Served with fries and drink"
+        android:id="@+id/desc"
+        android:visibility="gone"
+        android:layout_below="@+id/weight"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceLayout"
+        android:layout_alignParentRight="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pricetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PKR: "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ShipGray" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_circle_32dp"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="225dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/addImageView"
+                android:tint="@color/colorAccent"
+                android:paddingLeft="5dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_next_black_32dp"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="225dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/exploreImageView"
+                android:tint="@color/colorAccent"
+                android:visibility="gone"
+                android:paddingLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

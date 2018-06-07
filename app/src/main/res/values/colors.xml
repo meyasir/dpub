@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffeb3b</color>
+    <color name="colorPrimaryDark">#c8b900</color>
+    <color name="colorAccent">#c8b900</color>
+    <color name="snackBarColor">#a65160</color>
+
+    <color name="colorActive">#4F4F4E</color>
+    <color name="colorGray">#d8d8d8</color>
+    <color name="orderstatus">#ffeb3b</color>
+    
+    <color name="ShipGray">#4F4F4E</color>
+    <color name="Tide">#B1AEAB</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="close">#19ff0000</color>
+</resources>
